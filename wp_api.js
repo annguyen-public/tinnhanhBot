@@ -2,7 +2,7 @@ var WPAPI = require( 'wpapi' );
 var ultils = require("./utils.js");
 
 var site = new WPAPI({
-  endpoint: 'http://localhost/tinnhanh/wp-json/',
+  endpoint: 'http://p8mg0r-user.freehosting.host/news/wp-json/',
   username: 'admin',
   password: '123'
 });
