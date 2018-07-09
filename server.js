@@ -27,11 +27,19 @@ var bongda24hRemoveList = [".post-meta", ".ads", ".list-entry", "script", ".arti
 
 //ultils.delete_file('333.jpg');
 
-var trends = require('node-google-search-trends');
-trends('Vietnam', TOTAL_NUM, function(err, data) {
-    if (err) return console.err(err);
-    scrapeUploadItAll(data);
-});
+function start(){
+  var date = new Date();
+  console.log("start at" + date.toTimeString());
+  var trends = require('node-google-search-trends');
+  trends('Vietnam', TOTAL_NUM, function(err, data) {
+      if (err) return console.err(err);
+      scrapeUploadItAll(data);
+  });
+}
+
+var startToRun = setInterval(function () {
+  start();
+}, 5000);
 
 async function scrapeUploadItAll(dataArray){
   for (var i = 0; i < TOTAL_NUM; i++) {
