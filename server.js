@@ -38,8 +38,13 @@ function start(){
 }
 
 var startToRun = setInterval(function () {
-  start();
-}, 5000);
+  try{
+    start();
+  }
+  catch(e){
+    console.log(e);
+  }
+}, 300000);
 
 async function scrapeUploadItAll(dataArray){
   for (var i = 0; i < TOTAL_NUM; i++) {
