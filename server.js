@@ -95,6 +95,7 @@ function scapeAndUpload(data){
       console.log('posted!');
       //saveToFile(postData.content);
       wp_api.postToWP(postData);
+      //wp_api.test()
       //console.log(news_url);
 
       var record = {url: news_url};
