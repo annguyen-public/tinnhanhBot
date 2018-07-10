@@ -185,7 +185,7 @@ function get_news_image_sign(site){
     case news_list[7]:
       sign = "#content_detail img"; break;  //Saostar
     case news_list[8]:
-      sign = ".nwsHt img"; break; //Tin tức 24h
+      sign = ".news-image"; break; //Tin tức 24h
     case news_list[9]:
       sign = ".share_image img"; break; //Thể Thao 247 (lời tuyên bố phát cho các báo)
     case news_list[10]:
