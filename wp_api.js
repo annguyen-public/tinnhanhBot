@@ -22,7 +22,7 @@ exports.postToWP = function (data) {
 		    post: post.id
 		  }).then(function( media ) {
 		  	ultils.delete_file(post.id + '.jpg');
-		  	console.log(media);
+		  	//console.log(media);
 		    // Set the new media record as the post's featured media
 		    return site.posts().id( post.id ).update({
 		      featured_media: media.id

@@ -22,6 +22,7 @@ var kenh14RemoveList = [".kbwc-meta", ".kbwc-socials", ".kmnw-content", ".relati
 //var dantriRemoveList = [".box26", ".top-sharing", "script", ""];
 var danvietRemoveList = [".datetimeup", ".tinlienquan", ".tintin", ".nguonbaiviet", ".tukhoa", ".bannerbaiviet", "script", "#fb-root", ".numbercmmt", "#authorize-button", "#form_gui_binh_luan", "#noi_dung_binh_luan"];
 var dummiRemoveList = [""];
+var tintuc24hRemoveList = [".icoSocial", ".content-bv-lq", ".updTm", ".sbNws"];
 var bongda24hRemoveList = [".post-meta", ".ads", ".list-entry", "script", ".articlerelatepannel", "iframe", ".facebookbinhluan", ".dieu-huong", ".like-fb-gogle", ".tin-lien-quan", ".box-conten-cat", "#fb-root", ""];
 
 
@@ -217,7 +218,7 @@ function get_new_removelist(site){
     case news_list[7]:
       removeList = dummiRemoveList; break;  //Saostar
     case news_list[8]:
-      removeList = dummiRemoveList; break; //Tin tức 24h
+      removeList = tintuc24hRemoveList; break; //Tin tức 24h
     case news_list[9]:
       removeList = thethao247RemoveList; break; //Thể Thao 247 (lời tuyên bố phát cho các báo)
     case news_list[10]:
