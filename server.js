@@ -45,7 +45,7 @@ var startToRun = setInterval(function () {
   catch(e){
     console.log(e);
   }
-}, 300000);
+}, 150000);
 
 async function scrapeUploadItAll(dataArray){
   for (var i = 0; i < TOTAL_NUM; i++) {
@@ -61,6 +61,9 @@ async function scrapeUploadItAll(dataArray){
             console.log(e);
           }
           //console.log(i);
+        }
+        else{
+          console.log('Skip, duplicate news!');
         }
       }
     });
