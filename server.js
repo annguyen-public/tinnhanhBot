@@ -81,7 +81,7 @@ function scapeAndUpload(data){
     return;
   }
   console.log(news_source);
-  var postData = {title: news_title, categories: 3};
+  var postData = {title: news_title, categories: 0};
 
   //console.log(data['ht:news_item'][0]);
 
