@@ -11,9 +11,10 @@ exports.postToWP = function (data) {
 	site.posts().create({
 	  title: data.title,
 	  content: data.content,
-	  categories: data.categories,
+	  //categories: data.categories,
 	  status: 'publish'
 	}).then(function( post ) {
+		console.log( 'create post done!' );
 	  // Create the media record & upload your image file
 	  ultils.download(data.featured_media, post.id + '.jpg', function(){
 		  //var filePath = data.featured_media;
