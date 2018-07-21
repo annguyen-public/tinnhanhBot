@@ -173,7 +173,7 @@ function get_news_image_sign(site){
     case news_list[1]:
       sign = ".article-content img"; break; //Báo Lao Động
     case news_list[2]:
-      sign = "#article-body img"; break;  //Đài Tiếng Nói Việt Nam
+      sign = ".cms-photo"; break;  //Đài Tiếng Nói Việt Nam
     case news_list[3]:
       sign = ".FmsArticleBoxStyle-Images img"; break; //Vietnamnet.vn
     case news_list[4]:
