@@ -238,7 +238,7 @@ var startToRun = setInterval(function () {
   catch(e){
     console.log(e);
   }
-}, 150000);
+}, 900000);
 
 start();
 
