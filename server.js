@@ -89,6 +89,7 @@ function scapeAndUpload(data){
     postData.content = "";
     try{
       postData.content = news_api.removeItems(news[0], removeList);
+      postData.content += '<p style="float:right"><i> Theo ' + news_source + ' </i></p>';
     }
     catch(e){
       console.log(e);
